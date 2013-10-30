@@ -1,0 +1,77 @@
+body
+{
+	font-family: Arial;
+	font-size: smaller;
+	height: 100%;
+	background-image: url(images/fake-sidebar.png);
+	background-repeat: repeat-y;
+}
+
+#sidebar
+{
+	margin-right: 32px;
+	padding-right: 8pt;
+	padding-left: 8pt;
+	padding-bottom: 8pt;
+	padding-top: 8pt;
+	height: 100%;
+	float: left;
+	left: 0px;
+	width: 140px;
+	position: absolute;
+	top: 0px;
+}
+
+#sidebar .section
+{
+	background-image: url(images/sidebar-separator.png);
+	background-repeat: no-repeat;
+	margin-bottom: 8pt;
+}
+
+#sidebar .header
+{
+	font-weight: bolder;
+	font-size: larger;
+}
+
+#content
+{
+	padding-top: 12pt;
+	padding-bottom: 12pt;
+	width: 640px;
+	left: 160px;
+	position: absolute;
+	top: 0px;
+}
+
+.code
+{
+	color: maroon;
+	font-family: Monospace;
+}
+
+.component
+{
+	font-weight: bold;
+}
+
+.codeblock
+{
+	border-top: blue solid;
+	background-color: Silver;
+	color: maroon;
+	font-family: Monospace;
+	white-space: pre;
+	margin-top: 8pt;
+	margin-bottom: 8pt;
+}
+
+#features
+{
+}
+
+#features td
+{
+	padding: 8pt;
+}
