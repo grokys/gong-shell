@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileDialog", "Examples\FileDialog\FileDialog.csproj", "{6D9343CF-7F87-4C36-ADB8-DD8667F38E51}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellExplorer", "Examples\ShellExplorer\ShellExplorer.csproj", "{7258B802-D0E5-4268-9C71-3DCC6AF5C2C1}"
