@@ -1,1 +1,0 @@
-D:\projects\gong-shell\Examples\FileDialog\bin\Debug\FileDialog.exe.config
