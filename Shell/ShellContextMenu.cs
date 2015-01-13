@@ -323,9 +323,9 @@ namespace GongSolutions.Shell
         {
             MENUINFO info = new MENUINFO();
 
-            info.cbSize = Marshal.SizeOf(info);
+            info.cbSize = (UInt32)Marshal.SizeOf(info);
             info.fMask = MIM.MIM_MENUDATA;
-            info.dwMenuData = tag;
+            info.dwMenuData = (UIntPtr)tag;
 
             foreach (MenuItem item in menu.MenuItems)
             {
@@ -341,9 +341,9 @@ namespace GongSolutions.Shell
             MENUINFO menuInfo = new MENUINFO();
             MENUITEMINFO itemInfo = new MENUITEMINFO();
 
-            menuInfo.cbSize = Marshal.SizeOf(menuInfo);
+            menuInfo.cbSize = (UInt32)Marshal.SizeOf(menuInfo);
             menuInfo.fMask = MIM.MIM_MENUDATA;
-            itemInfo.cbSize = Marshal.SizeOf(itemInfo);
+            itemInfo.cbSize = (UInt32)Marshal.SizeOf(itemInfo);
             itemInfo.fMask = MIIM.MIIM_ID | MIIM.MIIM_SUBMENU;
 
             // First, tag the managed menu items with an arbitary 
@@ -363,7 +363,7 @@ namespace GongSolutions.Shell
                 else
                 {
                     User32.GetMenuInfo(itemInfo.hSubMenu, ref menuInfo);
-                    if (menuInfo.dwMenuData != tag) remove.Add(n);
+                    if ((int)menuInfo.dwMenuData != tag) remove.Add(n);
                 }
             }
 

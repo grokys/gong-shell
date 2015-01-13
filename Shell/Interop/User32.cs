@@ -57,30 +57,30 @@ namespace GongSolutions.Shell.Interop
     [StructLayout(LayoutKind.Sequential)]
     public struct MENUINFO
     {
-        public int cbSize;
+        public UInt32 cbSize;
         public MIM fMask;
-        public int dwStyle;
-        public int cyMax;
+        public UInt32 dwStyle;
+        public UInt32 cyMax;
         public IntPtr hbrBack;
-        public int dwContextHelpID;
-        public int dwMenuData;
+        public UInt32 dwContextHelpID;
+        public UIntPtr dwMenuData;
     }
 
     [StructLayout(LayoutKind.Sequential)]
     public struct MENUITEMINFO
     {
-        public int cbSize;
+        public UInt32 cbSize;
         public MIIM fMask;
-        public uint fType;
-        public uint fState;
-        public int wID;
+        public UInt32 fType;
+        public UInt32 fState;
+        public UInt32 wID;
         public IntPtr hSubMenu;
-        public int hbmpChecked;
-        public int hbmpUnchecked;
-        public int dwItemData;
+        public IntPtr hbmpChecked;
+        public IntPtr hbmpUnchecked;
+        public UIntPtr dwItemData;
         public string dwTypeData;
-        public uint cch;
-        public int hbmpItem;
+        public UInt32 cch;
+        public IntPtr hbmpItem;
     }
 
     public enum MF
